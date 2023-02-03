@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario ING</title>
+</head>
+<body>
+    <main class="wrapper_main">
+
+        <h2>Accede a tu Área Clientes</h2>
+
+        <p>Elije tu documento</p>
+
+        <fieldset>
+            <div class="dni_grouper">
+                <input type="radio" name="documento" id="dni" onclick='change_doc_back()'checked>
+                <label for="dni">
+                    DNI o Tarjeta de residencia
+                </label>
+            </div>
+
+            <div class="passport_grouper">
+                <input type="radio" name="documento" id="passport" onclick='change_doc()'>
+                <label for="passport">
+                    Pasaporte
+                </label>
+            </div>
+        </fieldset>
+
+        <div class="num_container">
+            <p>Número de documento</p>
+            <input type="text" id="num_doc" maxlength="9" placeholder="DNI o Tarjeta de residencia" >
+        </div>
+
+        <div>
+            <p>Fecha de nacimiento</p>
+            <div class="date">
+                <input id="date"type="date">
+            </div>
+        </div>
+
+        <input type="checkbox" name="remember" id="remember">
+        <label for="remember" id="label_remeber">
+            Recordar
+        </label>
+        <input type="button" value="Entrar" id="enviar">
+        </main>
+</body>
+</html>
